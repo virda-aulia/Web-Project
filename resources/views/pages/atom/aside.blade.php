@@ -80,7 +80,7 @@
 
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a href="layouts-collapsed-menu.html" class="menu-link">
+                    <a href="{{ route("accounts.administrator.index") }}" class="menu-link">
                         <div data-i18n="Administrator">Administrator</div>
                     </a>
                 </li>
