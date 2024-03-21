@@ -8,6 +8,6 @@ class AppController extends Controller
 {
     public function templating()
     {
-        return view("pages.main");
+        return view("pages.layouts");
     }
 }
