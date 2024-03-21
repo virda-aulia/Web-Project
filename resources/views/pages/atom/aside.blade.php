@@ -15,7 +15,9 @@
                         fill="#7367F0" />
                 </svg>
             </span>
-            <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+            <span class="app-brand-text demo menu-text fw-bold">
+                My App
+            </span>
         </a>
 
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
@@ -27,86 +29,70 @@
     <div class="menu-inner-shadow"></div>
 
     <ul class="menu-inner py-1">
-        <!-- Dashboards -->
-        <li class="menu-item active open">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons ti ti-smart-home"></i>
-                <div data-i18n="Dashboards">Dashboards</div>
-                <div class="badge bg-primary rounded-pill ms-auto">3</div>
+
+        <li class="menu-item active">
+            <a href="{{ route('app.dashboard') }}" class="menu-link">
+                <i class="menu-icon fa fa-dashboard"></i>
+                <div data-i18n="Dashboard">Dashboard</div>
             </a>
-            <ul class="menu-sub">
-                <li class="menu-item active">
-                    <a href="index.html" class="menu-link">
-                        <div data-i18n="Analytics">Analytics</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="dashboards-crm.html" class="menu-link">
-                        <div data-i18n="CRM">CRM</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="dashboards-ecommerce.html" class="menu-link">
-                        <div data-i18n="eCommerce">eCommerce</div>
-                    </a>
-                </li>
-            </ul>
         </li>
 
-        <!-- Layouts -->
         <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
-                <div data-i18n="Layouts">Layouts</div>
+                <i class="menu-icon fa fa-gears"></i>
+                <div data-i18n="Data Balita">Data Balita</div>
             </a>
 
             <ul class="menu-sub">
                 <li class="menu-item">
                     <a href="layouts-collapsed-menu.html" class="menu-link">
-                        <div data-i18n="Collapsed menu">Collapsed menu</div>
+                        <div data-i18n="Hasil Clustering AHC">Hasil Clustering AHC</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="layouts-content-navbar.html" class="menu-link">
-                        <div data-i18n="Content navbar">Content navbar</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="layouts-content-navbar-with-sidebar.html" class="menu-link">
-                        <div data-i18n="Content nav + Sidebar">Content nav + Sidebar</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="../horizontal-menu-template" class="menu-link" target="_blank">
-                        <div data-i18n="Horizontal">Horizontal</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="layouts-without-menu.html" class="menu-link">
-                        <div data-i18n="Without menu">Without menu</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="layouts-without-navbar.html" class="menu-link">
-                        <div data-i18n="Without navbar">Without navbar</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="layouts-fluid.html" class="menu-link">
-                        <div data-i18n="Fluid">Fluid</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="layouts-container.html" class="menu-link">
-                        <div data-i18n="Container">Container</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="layouts-blank.html" class="menu-link">
-                        <div data-i18n="Blank">Blank</div>
+                    <a href="layouts-collapsed-menu.html" class="menu-link">
+                        <div data-i18n="Hasil Clustering K - Means">Hasil Clustering K - Means</div>
                     </a>
                 </li>
             </ul>
         </li>
+
+        <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon fa fa-edit"></i>
+                <div data-i18n="Data Cek Status Gizi">Data Cek Status Gizi</div>
+            </a>
+
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="layouts-collapsed-menu.html" class="menu-link">
+                        <div data-i18n="Administrator">Status Gizi</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons fa fa-users"></i>
+                <div data-i18n="Accounts Users">Accounts Users</div>
+            </a>
+
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="layouts-collapsed-menu.html" class="menu-link">
+                        <div data-i18n="Administrator">Administrator</div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="menu-item">
+            <a href="app-email.html" class="menu-link">
+                <i class="menu-icon fa fa-user"></i>
+                <div data-i18n="Profil Pengguna">Profil Pengguna</div>
+            </a>
+        </li>
+
     </ul>
 </aside>
