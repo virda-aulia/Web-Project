@@ -10,4 +10,15 @@ class AppController extends Controller
     {
         return view("pages.layouts");
     }
+
+    public function dashboard()
+    {
+        try {
+
+            return view("pages.app.dashboard");
+
+        } catch (\Exception $e) {
+            dd($e->getMessage());
+        }
+    }
 }
