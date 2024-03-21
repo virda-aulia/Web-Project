@@ -10,7 +10,13 @@ Route::get('/', function () {
 
 Route::get("/layouts-template", [AppController::class, "templating"]);
 
+Route::controller(AppController::class)->group(function() {
+    Route::prefix("app")->group(function() {
+        Route::get("dashboard", "dashboard")->name("app.dashboard");
+    });
+});
+
 Route::controller(LoginController::class)->group(function() {
-    Route::get("/login", "login");
-    Route::post("/login", "proses_login");
+    Route::get("/login", "login")->name("authorization.login");
+    Route::post("/login", "proses_login")->name("authorization.proses");
 });
