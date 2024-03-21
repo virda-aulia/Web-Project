@@ -7,4 +7,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("/templating", [AppController::class, "templating"]);
+Route::get("/layouts-template", [AppController::class, "templating"]);
