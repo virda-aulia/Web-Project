@@ -23,4 +23,15 @@ class LoginController extends Controller
             dd($e->getMessage());
         }
     }
+
+    public function proses_login(Request $request)
+    {
+        try {
+
+            return redirect(route("app.dashboard"));
+
+        } catch (\Exception $e) {
+            dd($e->getMessage());
+        }
+    }
 }
